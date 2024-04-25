@@ -2,12 +2,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Main {
+public class WeatherTemperatureChanges {
     public static void main(String[] args) {
         try {
             File file = new File("weather.txt");
             Scanner scanner = new Scanner(file);
-            scanner.useDelimiter(",|\\s+"); // Use comma or whitespace as delimiter
 
             // Read the first temperature
             if (scanner.hasNextDouble()) {
